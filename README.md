@@ -11,6 +11,7 @@
 sudo apt-get install libzbar0
 pip install django
 pip install pyzbar
+pip install opencv-contrib-python
 ```
 
 ## Usage
