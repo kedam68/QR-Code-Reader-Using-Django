@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block body_block %}
+<h2 class="text-center mt-3 mb-3 border border-primary"><b>A Simple QR Code Reader</b></h2>
+<div class="card text-center">
+    <div class="card-header">
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Upload your QR Code Image</h5>
+      <p class="card-text"><form method="POST" enctype="multipart/form-data">
+        {{form.as_p}}
+        {% csrf_token %}
+        <input type="submit" value="Upload" class="btn btn-primary btn-lg">
+    </form></p>
+    </div>
+    <div class="card-footer text-muted">
+    </div>
+  </div>
+
+
+{% endblock %}

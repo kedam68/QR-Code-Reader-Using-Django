@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block body_block %}
+<h2 class="text-center mt-3 mb-3 border border-primary"><b>Your Result Is</b></h2>
+<br>
+
+<div class="card text-center m-auto" style="width: 18rem;">
+    <img src="/media/qr/{{image}}" class="card-img-top" alt="uploaded image">
+    <div class="card-body">
+      <p class="card-text">{{data}}</p>
+    </div>
+  </div>
+
+{% endblock %}
